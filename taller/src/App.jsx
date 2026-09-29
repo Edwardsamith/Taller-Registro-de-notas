@@ -31,6 +31,13 @@ function App() {
       0,
     ) / estudiantes.length;
 
+  function eliminarEstudiantes(index) {
+    const nuevosEstudiantes = estudiantes.filter(
+      (estudiante, i) => i !== index,
+    );
+    setEstudiantes(nuevosEstudiantes);
+  }
+
   return (
     <>
       <h1>Lista de Estudiantes</h1>
@@ -57,8 +64,10 @@ function App() {
       {estudiantes.map((estudiante, index) => (
         <Estudiante
           key={index}
-          nombre={`#${index + 1} ${estudiante.nombre}`} // aquí agregamos el número
+          index={index}
+          nombre={`#${index + 1} ${estudiante.nombre}`}
           nota={estudiante.nota}
+          onEliminar={eliminarEstudiantes}
         />
       ))}
     </>
