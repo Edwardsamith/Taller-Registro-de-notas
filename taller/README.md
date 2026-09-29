@@ -1,16 +1,66 @@
-# React + Vite
+# Taller: Registro de Notas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con React y Vite para registrar y gestionar las notas de un grupo de estudiantes.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Mostrar la lista de estudiantes.
+* Mostrar la nota de cada estudiante.
+* Indicar si el estudiante está aprobado o reprobado.
+* Calcular el promedio del grupo.
+* Registrar nuevos estudiantes mediante un formulario.
+* Eliminar estudiantes de la lista.
 
-## React Compiler
+## Tecnologías utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript
+* JSX
+* HTML
+* CSS
 
-## Expanding the ESLint configuration
+## Requisitos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Para ejecutar el proyecto es necesario tener instalado:
+
+* Node.js
+* npm
+
+## Instalación
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/Edwardsamith/Taller-Registro-de-notas
+```
+
+Ingresar a la carpeta del proyecto:
+
+```bash
+cd taller
+```
+
+Instalar las dependencias:
+
+```bash
+npm install
+```
+
+## Ejecución
+
+Para iniciar el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+Luego abrir en el navegador la dirección que proporciona Vite, normalmente:
+
+```text
+http://localhost:5173
+```
+
+## Autor
+
+Edward Samith Ramirez Liñan
