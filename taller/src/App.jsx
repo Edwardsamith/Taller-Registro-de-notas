@@ -10,8 +10,12 @@ function App() {
     { nombre: "Yulian", nota: 2.5 },
   ];
 
+  const promedio = estudiantes.reduce((acumulador, estudiante) => acumulador + estudiante.nota, 0) / estudiantes.length;
+
   return (
     <>
+      <h1>Lista de Estudiantes</h1>
+      <p>Promedio de estudiantes: {promedio.toFixed(2)}</p>
       {estudiantes.map((estudiante, index) => (
         <Estudiante
           key={index}
